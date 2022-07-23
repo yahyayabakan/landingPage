@@ -1,0 +1,129 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+
+
+header {
+  background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+ background-size: cover;
+  background-position: center center;
+  color: #fff;
+  position: relative;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+header::after, #interests::after, #socialmedia::after {
+  content:'';
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 70px;
+  color: #FF5933;
+}
+p {
+  font-size: 35px;
+  color: #FF9B33;
+}
+
+ul {
+  font-size: 30px;
+  color: #FFD433;
+}
+
+header p {
+  font-size: 35px;
+  margin: 0;
+}
+
+section {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #fae5df;
+  font-family: 'Lato', sans-serif;
+}
+nav {
+  background-color: #FF5933;
+  color: #f5cac2;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+nav a {
+  color: black;
+  margin-left: 20px;  
+}
+
+#interests * {
+  position: relative;
+ 
+  z-index: 1;
+}
+
+#socialmedia {
+  background-image: url('https://images.unsplash.com/photo-1562646329-0d0f4d3bf503?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  position: relative;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#socialmedia * {
+  position: relative;
+  z-index: 1;
+}
+
+#interests {
+  background-image: url('https://1.bp.blogspot.com/-hEpKJgzAqHs/XiCmKbzgMZI/AAAAAAAADfY/xWfeE_OPS_4j7FSu2xrPmCTOx41Jk0ZiQCLcBGAsYHQ/w1200-h630-p-k-no-nu/Imortance-of-personal-interests-and-hobbies.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  position: relative;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer {
+  background-color:  #FF5933;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }

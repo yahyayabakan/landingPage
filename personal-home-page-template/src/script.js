@@ -17,3 +17,32 @@ document.getElementById('start_reading').addEventListener('click', (event) => {
     element_pages.appendChild(new_ul);
 
 });
+
+
+var comments;
+comments = [];
+
+function getNumberOrString(value) {
+    // Convert a string value to a number if possible
+    let number_value = Number(value);
+    if (Number.isNaN(number_value)) {
+        return value
+    } else {
+        return number_value
+    }
+}
+
+
+document.getElementById('add_comment').addEventListener('click', (event) => {
+    comments.push(getNumberOrString(document.getElementById('comment').value));
+
+
+    let comment_list = document.getElementById('comment_list');
+    comment_list.replaceChildren();
+    comments.forEach((item) => {
+        let new_li = document.createElement('li');
+        new_li.innerText = item;
+
+        comment_list.appendChild(new_li);
+    });
+});
